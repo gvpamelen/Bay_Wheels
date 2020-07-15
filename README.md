@@ -9,10 +9,16 @@ Bay Wheels shares [monthly logs of bike anonimised bike usage](https://www.lyft.
 ![](images/screenshot.png)
 
 
+Outlook
+------------
+The work done is this notebook, opens that path to additional projects in the future:
+* Analyse additional months, to analyse longer term trends. All data-processing undertaken in this file is programatically and hence easy to re-run on additional data. More data would open up interesting temporal analysis using i.e. ETS or ARIMA models.
+* Create a dashboard to monitor trips over time (we could simulate a real-time monitoring scenario). Multiple options to do this, using i.e. Tableau, Dash or Bokeh, depending on goals (i.e. improve Dash proficiency).
+
+
 Recommended setup
 ------------
 To get the best experience viewing the jupyter notebooks, we advice to use jupyterlabs, with the *table-of-contents* (toc) extension. 
-
 
 
 Project Organization
