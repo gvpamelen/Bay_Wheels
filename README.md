@@ -1,46 +1,34 @@
 covid19
 ==============================
 
-**Objective:** Dashboard to visualise the global spread of the Covid-19 virus. 
+**Objective:** Business Analysis of Bay Wheels trips (Lyft's bikes) in Jan-20. 
 
-**General process:** To generate the dashboard, data is gathered from [Johns Hopkins Univerity](https://github.com/CSSEGISandData/COVID-19), supplemented with [demographic](https://www.worldometers.info/world-population/population-by-country/) and [geographic](www.naturalearthdata.com) data. This data is cleaned, stored in a SQLite database after which we extract it and apply pre-processing for it to be displayed in a Bokeh dashboard in an efficient manner.   
+**General process:** 
+Bay Wheels shares [monthly logs of bike anonimised bike usage](https://www.lyft.com/bikes/bay-wheels/system-data). We download the data from Jan 2020, clean it and perform an extensive EDA. We create a report (pdf), where we use extensive (automated) formatting on selected plot from this EDA to get them ready for use in high-end powerpoint reports. The latter outlines a method to automated certain powerpoint reports, in cases where (business requirements) prefer static reports over dashboards.
 
-To run the dashboard, run `bokeh serve main_dashboard.py`. The underlying Covid data is automatically updated.
+![](images/screenshot.png)
 
-See below for a quick overview of the current dashboard.
 
 Recommended setup
 ------------
 To get the best experience viewing the jupyter notebooks, we advice to use jupyterlabs, with the *table-of-contents* (toc) extension. 
 
-A demo of the dashboard in action can be seen below.
-
-![](covid_dashboard.gif)
 
 
 Project Organization
 ------------
 
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    ├── README.md          
+    ├── data                 <- All data-files, raw & various stages of processing.
     │
-    ├── notebooks          
-    │   ├── data           <- notebooks to process data (gather, clean, store)
-    │   └── plots          <- notebooks to perform EDA and developt plots for the dashboard
+    ├── notebooks            <- notebooks to process data, perform the EDA and generate the report
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt     <- The requirements file for reproducing the analysis environment, e.g.
+    │                           generated with `pip freeze > requirements.txt`
     │
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or wrangle
-    │   │
-    │   └── visualization  <- Scripts to create visualizations
+    ├── src                  <- Source code for use in this project.
     │
-    └── main_dashboard.py  <- dashboard, run with `bokeh serve dashboard.py`
+    └── Lyft_Bay_Wheels.pdf  <- final report
 
 
 --------
