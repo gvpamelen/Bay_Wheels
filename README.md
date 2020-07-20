@@ -1,7 +1,7 @@
-covid19
+Bay Wheels Analysis
 ==============================
 
-**Objective:** Business Analysis of Bay Wheels trips (Lyft's bikes) in Jan-20. 
+**Objective:** Business Analysis of Bay Wheels trips (Lyft's bikes) in Jan-20, using clean formatted python generated graphs. 
 
 **General process:** 
 Bay Wheels shares [monthly logs of bike anonimised bike usage](https://www.lyft.com/bikes/bay-wheels/system-data). We download the data from Jan 2020, clean it and perform an extensive EDA. We create a report (pdf), where we use extensive (automated) formatting on selected plot from this EDA to get them ready for use in high-end powerpoint reports. The latter outlines a method to automated certain powerpoint reports, in cases where (business requirements) prefer static reports over dashboards.
